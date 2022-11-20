@@ -54,3 +54,27 @@
 .card:hover .path1 {
     opacity: 1;
 }
+
+@media (max-width: 550px) {
+    .card {
+        height: 350px;
+        width: 350px;
+    }
+
+    .card_pic {
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 450px) {
+    .card {
+        height: 300px;
+        width: 300px;
+    }
+
+    .card_pic {
+        height: 300px;
+        width: 300px;
+    }
+}

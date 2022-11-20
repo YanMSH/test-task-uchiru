@@ -31,3 +31,12 @@
 .header_link_active {
     background-color: #1E88E5;
 }
+
+@media (max-width: 480px) {
+    .header{
+        padding: 0 32px;
+    }
+    .header_link_item {
+        font-size: 12px;
+    }
+}
