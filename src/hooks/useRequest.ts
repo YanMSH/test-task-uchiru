@@ -27,7 +27,6 @@ export const useRequest = () => {
                         ? options.headers
                         : { Accept: 'application/json', 'Content-Type': 'application/json', 'x-api-key': process.env.REACT_APP_API_KEY },
                 });
-                console.log(response.data)
                 applyData(response.data);
             } catch (err: unknown) {
                 if ((err as Error).message) {
