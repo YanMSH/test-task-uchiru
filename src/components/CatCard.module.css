@@ -1,0 +1,56 @@
+.card {
+    height: 225px;
+    width: 225px;
+    transition-duration: 0.2s;
+    position: relative;
+}
+
+.card_pic {
+    height: 225px;
+    width: 225px;
+    object-fit: cover;
+}
+
+.like_icon {
+    position:absolute;
+    bottom:16px;
+    right:12px;
+    z-index: 2;
+}
+
+.path1 {
+    transition-duration: 0.2s;
+    opacity: 0;
+}
+.path2 {
+    opacity: 0;
+    transition-duration: 0.2s;
+}
+
+.path2:hover {
+    opacity: 1;
+}
+
+.card:hover {
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+    transform: scale(1.15);
+}
+
+.card_clicked {
+    box-shadow: 0px 6px 5px rgba(0, 0, 0, 0.24), 0px 9px 18px rgba(0, 0, 0, 0.18);
+    transform: scale(1.15);
+}
+
+.card_clicked .path2 {
+    opacity: 1;
+    fill: #FF3A00;
+}
+
+.path2_clicked {
+    opacity: 1;
+    fill: #FF3A00;
+}
+
+.card:hover .path1 {
+    opacity: 1;
+}
